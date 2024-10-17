@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Role</th>
+                <th *ngIf="showButton()">Boton</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.username}}</td>
+                <td>{{user.role}}</td>
+                <td *ngIf="showButton()">
+                    <button>Boton</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,19 @@
+<div>
+    <h2>Login</h2>
+
+    <div *ngIf="error">
+        {{error}}
+    </div>
+
+    <div class="formgroup">
+        <label for="username">Username</label>
+        <input id="username" [(ngModel)]="username" placeholder="Ingrese nombre de usuario"/>
+    </div>
+
+    <div class="formgroup">
+        <label for="">Contraseña</label>
+        <input id="password" type="password" [(ngModel)]="password">
+    </div>
+
+    <button (click)="Login()">Login</button>
+</div>
